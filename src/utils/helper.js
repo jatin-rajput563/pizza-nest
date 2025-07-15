@@ -1,4 +1,7 @@
 import { useLayoutEffect } from "react";
+import paneerPizza from '../assets/images/svg/paneer-pizza.svg'
+import chesePizza from '../assets/images/svg/chese-pizza.svg'
+
 import { Chefs, Food, Support } from "./Icons";
 
 export const nav_Links = [
@@ -18,7 +21,7 @@ export const Hero_Data = [
         number2: "98%",
         numberText2: "Happy Customers",
     }
-]
+];
 
 export const AboutNest_Data = [
     {
@@ -33,4 +36,20 @@ export const AboutNest_Data = [
         icon: Support,
         name: "Online Support"
     },
+];
+
+export const Delicious_Data = [
+    {
+        Image: paneerPizza,
+        heading: "Delicious",
+        name: "Spicy Paneer",
+        time: "Limited Time",
+    },
+    {
+        Image: chesePizza,
+        heading: "Delicious",
+        name: "CHEESE BURST",
+        time: "Limited Time",
+    },
+
 ]

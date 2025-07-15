@@ -19,7 +19,7 @@ const AboutNest = () => {
               <h2 className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-[120%] pt-2">
                 Welcome to the Nest
               </h2>
-              <ul className="lg:list-disc pt-4 pl-5 text-left">
+              <ul className="lg:list-disc pt-4 pl-[25px] text-left">
                 <li>
                   <p className="max-w-[518px] text-sm sm:text-base leading-[160%] text-center lg:text-left text-[#4D4D4D]">
                     At PizzaNest, we believe that pizza is more than just food —
