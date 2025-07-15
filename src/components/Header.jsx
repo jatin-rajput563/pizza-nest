@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#00243C] text-white py-6 w-full relative z-50">
-      <div className="container mx-auto px-4 max-w-[1140px] flex items-center justify-between">
+    <header className="bg-[#00243C] text-white pt-6 w-full relative z-50 px-4">
+      <div className="container mx-auto max-w-[1140px] flex items-center justify-between">
         <a href="/" className="font-semibold text-lg z-10">
           Pizza Nest
         </a>
