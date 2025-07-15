@@ -1,3 +1,6 @@
+import { useLayoutEffect } from "react";
+import { Chefs, Food, Support } from "./Icons";
+
 export const nav_Links = [
     { label: "Home", href: "/" },
     { label: "Menu", href: "/" },
@@ -14,6 +17,20 @@ export const Hero_Data = [
         numberText1: "Pizzas Delivered",
         number2: "98%",
         numberText2: "Happy Customers",
-
     }
+]
+
+export const AboutNest_Data = [
+    {
+        icon: Chefs,
+        name: "Professional Chefs"
+    },
+    {
+        icon: Food,
+        name: "Best Quality Food"
+    },
+    {
+        icon: Support,
+        name: "Online Support"
+    },
 ]
