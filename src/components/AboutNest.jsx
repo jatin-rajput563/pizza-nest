@@ -1,21 +1,21 @@
 import React from "react";
 import { AboutNest_Data } from "../utils/helper";
 import pizzaManimg from "../assets/images/png/nestpizaman-img.png";
+import LeftPizza from "../assets/images/png/About-left-pizza.png";
 
 const AboutNest = () => {
   return (
     <>
-      <div className="min-h-screen pt-16 md:pt-[100px]">
+      <div className="pt-16 md:pb-[48px] md:pt-[100px] relative">
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10 text-center lg:text-left">
-            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
+            <div className="lg:w-1/2 flex py-[22px] sm:py-[44px] md:py-[77px] flex-col items-center lg:items-start">
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <p className="font-bold text-lg leading-[120%] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
                   About Us
                 </p>
                 <div className="w-[60px] h-[1px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]"></div>
               </div>
-
               <h2 className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-[120%] pt-2">
                 Welcome to the Nest
               </h2>
@@ -64,6 +64,11 @@ const AboutNest = () => {
             </div>
           </div>
         </div>
+        <img
+          className="absolute left-0 bottom-0 w-full max-w-[90px] sm:max-w-[150px] animate-pizzaFloat"
+          src={LeftPizza}
+          alt="left-pizza"
+        />
       </div>
     </>
   );
