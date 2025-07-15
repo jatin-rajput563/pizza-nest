@@ -1,12 +1,13 @@
 import React from "react";
 import { Delicious_Data } from "../utils/helper";
 import pizzaPrice from "../assets/images/svg/pizza-price.svg";
+import tomato from "../assets/images/png/right-tomato-img.png";
 import CustomBtn from "../components/common/CustomBtn";
 
 const Delicious = () => {
   return (
     <>
-      <div className="py-[100px]">
+      <div className="py-[100px] relative overflow-hidden">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex max-lg:flex-wrap justify-center items-center gap-4 sm:gap-6">
             {Delicious_Data.map((item, index) => (
@@ -43,6 +44,11 @@ const Delicious = () => {
             ))}
           </div>
         </div>
+        <img
+          className="absolute -bottom-[150px] -right-[232px] animate-spinScale"
+          src={tomato}
+          alt="tomato-img"
+        />
       </div>
     </>
   );
