@@ -55,3 +55,23 @@
 .animate-spinScale {
     animation: spinScale 6s linear infinite;
 }
+
+.custom-gradient-border {
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(85.93deg,
+            #EC6112 1.55%,
+            #FF902E 47.34%,
+            rgba(254, 254, 254, 0) 90.56%);
+}
+
+.gradient-border {
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(85.93deg,
+            #EC6112 1.55%,
+            #FF902E 47.34%,
+            rgba(254, 254, 254, 0) 90.56%);
+}

@@ -1,8 +1,20 @@
 import "./App.css";
+import Lenis from "lenis";
 import Bestseller from "./components/Bestseller";
 import Delicious from "./components/Delicious";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+
+const lenis = new Lenis();
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 function App() {
   return (
