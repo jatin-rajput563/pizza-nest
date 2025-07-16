@@ -8,7 +8,7 @@ import deliveryImg from "../assets/images/png/delivery-img.png";
 const Delivery = () => {
   return (
     <>
-      <div className="pt-[110px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
+      <div className="py-[30px] sm:py-[60px] md:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex flex-wrap-reverse lg:flex-nowrap items-center justify-center lg:justify-between -mx-3">
             <div className="w-full lg:w-1/2 px-3 text-center lg:text-left">
@@ -34,7 +34,10 @@ const Delivery = () => {
                     "Real-time Order Tracking",
                     "Eco-Friendly Packaging",
                   ].map((text, index) => (
-                    <div className="flex items-center gap-[6px] mt-3" key={index}>
+                    <div
+                      className="flex items-center gap-[6px] mt-3"
+                      key={index}
+                    >
                       <CircleTick />
                       <CustomDescription
                         DescClass="leading-[160%] text-[#373737] text-sm sm:text-base"
