@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutNest_Data } from "../utils/helper";
 import pizzaManimg from "../assets/images/png/nestpizaman-img.png";
-import LeftPizza from "../assets/images/png/About-left-pizza.png";
+import LeftPizza from 'src/assets/images/png/about-left-pizza.png'
 
 const AboutNest = () => {
   return (
