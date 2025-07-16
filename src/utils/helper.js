@@ -6,7 +6,7 @@ import pizza2 from '../assets/images/png/pizza-img-2.png'
 import pizza3 from '../assets/images/png/pizza-img-3.png'
 import pizza4 from '../assets/images/png/pizza-img-4.png'
 
-import { Chefs, Food, Support } from "./Icons";
+import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Support } from "./Icons";
 
 export const nav_Links = [
     { label: "Home", href: "/" },
@@ -84,3 +84,26 @@ export const Bestsleller_data = [
         details: "Masala-marinated paneer, sautéed onions, green & red capsicum, mozzarella cheese",
     }
 ]
+
+export const SOCIAL_ICON = [
+    {
+        icon: FacebookSvg,
+        socialLink: "https://www.facebook.com"
+    },
+    {
+        icon: InstaSvg,
+        socialLink: "https://www.instagram.com"
+    },
+    {
+        icon: LinkdinSvg,
+        socialLink: "https://www.linkedin.com"
+    }
+]
+
+export const SUPPORT_LINKS = [
+    "Terms & Conditions", "Privacy Policy"
+];
+
+export const QUICK_LINKS = [
+    "Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"
+];

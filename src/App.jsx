@@ -6,6 +6,8 @@ import Delivery from "./components/Delivery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LargePizza from "./components/LargePizza";
+import Footer from "./components/Footer";
+// import PerfectPizza from "./components/PerfectPizza";
 
 const lenis = new Lenis();
 lenis.on("scroll", (e) => {
@@ -27,6 +29,8 @@ function App() {
       <Bestseller />
       <LargePizza />
       <Delivery />
+      {/* <PerfectPizza /> */}
+      <Footer />
     </>
   );
 }
