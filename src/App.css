@@ -81,7 +81,7 @@ html {
             rgba(254, 254, 254, 0) 90.56%);
 }
 
-@theme {
+:root {
     --color-soft-gray: #E8E8E8;
     --color-off-white: #FEFEFE;
     --color-on-white: #EFEFEF;
@@ -95,6 +95,7 @@ html {
     --color-black: #010101;
     --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
 }
+
 
 .bg-prime {
     background: var(--color-prime-gradient) !important;

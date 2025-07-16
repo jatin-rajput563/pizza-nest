@@ -12,6 +12,9 @@ import galleryImg4 from "../assets/images/png/gallery-img-4.png";
 import galleryImg5 from "../assets/images/png/gallery-img-5.png";
 import galleryImg6 from "../assets/images/png/gallery-img-6.png";
 import galleryImg7 from "../assets/images/png/gallery-img-7.png";
+import userAvatar1 from "../assets/images/png/testimonial-user-img-1.png";
+import userAvatar2 from "../assets/images/png/testimonial-user-img-2.png";
+import userAvatar3 from "../assets/images/png/testimonial-user-img-3.png";
 
 import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Order, PizzaSlice, Support, Track } from "./Icons";
 
@@ -141,4 +144,28 @@ export const HOW_IT_WORKS_DATA = [
         title: "Track & Enjoy",
         description: "Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness and dig in!",
     }
+];
+
+export const Testimonials_Data = [
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+];
+
+export const Testimonials_Avatar = [
+    userAvatar1,
+    userAvatar2,
+    userAvatar3
 ]
