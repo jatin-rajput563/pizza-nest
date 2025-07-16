@@ -1,78 +1,115 @@
 import React from "react";
-import { Gallery_Data } from "../utils/helper";
+import CustomHeading from "./common/CustomHeading";
+import { Line } from "../utils/Icons.jsx";
+import { Gallery_Data } from "../utils/helper.js";
 
 const Gallery = () => {
-  const widthClasses = [
-    "max-w-[267px]", // 1
-    "max-w-[558px]", // 2
-    "max-w-[267px]", // 3
-    "max-w-[267px]", // 4
-    "max-w-[340px]", // 5
-    "max-w-[194px]", // 6
-    "max-w-[267px]", // 7
-  ];
-
-  const heightClasses = [
-    "h-[291px]", // 1
-    "h-[329px]", // 2
-    "h-[235px]", // 3
-    "h-[248px]", // 4
-    "h-[210px]", // 5
-    "h-[210px]", // 6
-    "h-[304px]", // 7
-  ];
-
-  const firstRow = Gallery_Data.slice(0, 3);
-  const secondRow = Gallery_Data.slice(3);
-
   return (
-    <div className="min-h-screen py-10">
-      <div className="max-w-[1440px] mx-auto px-4 space-y-6">
-        {/* First Row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {firstRow.map((item, index) => (
-            <div
-              key={index}
-              className={`w-full ${widthClasses[index]} ${heightClasses[index]} rounded-[12px] overflow-hidden`}
-            >
-              <img
-                src={item.Image}
-                alt={`gallery-${index}`}
-                className="w-full h-full object-cover rounded-[12px]"
-              />
+    <>
+      <div className="px-5 py-25">
+        <div className="max-w-[1140px] w-full mx-auto flex justify-center items-center flex-col">
+          <div className=" flex justify-center items-center gap-1.5 mb-2">
+            <div className="">
+              <Line />
             </div>
-          ))}
-        </div>
-
-        {/* Second Row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {secondRow.map((item, index) => {
-            const overallIndex = index + 3;
-
-            // Add conditional negative margin
-            const applyNegativeMargin =
-              overallIndex === 3
-                ? "-mt-[38px]"
-                : overallIndex === 6
-                ? "-mt-[93px]"
-                : "";
-
-            return (
-              <div
-                key={overallIndex}
-                className={`w-full ${widthClasses[overallIndex]} ${heightClasses[overallIndex]} rounded-[12px] overflow-hidden ${applyNegativeMargin}`}
-              >
+            <h4 className="text-prime-gradient text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
+              Our Gallery
+            </h4>
+            <div className=" rotate-[180deg]">
+              <Line />
+            </div>
+          </div>
+          <CustomHeading
+            headClass="text-center mt-2 !leading-[120%] mb-10 max-w-[550px] w-full"
+            headText="A Glimpse Into Our Pizza World"
+          />
+          <div className="flex xl:flex-row flex-col items-center md:gap-6 gap-4">
+            <div className="xl:flex hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
+              {Gallery_Data.slice(0, 2).map((image, i) => (
                 <img
-                  src={item.Image}
-                  alt={`gallery-${overallIndex}`}
-                  className="w-full h-full object-cover rounded-[12px]"
+                  className="object-cover rounded-xl"
+                  key={i}
+                  src={image}
+                  alt="image"
                 />
+              ))}
+            </div>
+            <div className="flex items-center md:gap-6 gap-4 w-full flex-col max-w-[558px]">
+              {Gallery_Data.slice(2, 3).map((image, i) => (
+                <img
+                  className="object-cover rounded-xl"
+                  key={i}
+                  src={image}
+                  alt="image"
+                />
+              ))}
+              <div className="xl:flex hidden justify-center items-center w-full md:gap-6 gap-4">
+                {Gallery_Data.slice(3, 5).map((image, i) => (
+                  <img
+                    className="object-cover rounded-xl w-full h-auto"
+                    key={i}
+                    src={image}
+                    alt="image"
+                  />
+                ))}
               </div>
-            );
-          })}
+            </div>
+            <div className="xl:flex hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
+              {Gallery_Data.slice(5, 8).map((image, i) => (
+                <img
+                  className="object-cover rounded-xl"
+                  key={i}
+                  src={image}
+                  alt="image"
+                />
+              ))}
+            </div>
+            <div className="max-sm:hidden flex xl:hidden justify-center items-center w-full md:gap-6 gap-4">
+              {Gallery_Data.slice(3, 5).map((image, i) => (
+                <img
+                  className="object-cover rounded-xl"
+                  key={i}
+                  src={image}
+                  alt="image"
+                />
+              ))}
+            </div>
+            <div className="flex sm:hidden justify-center items-center w-full md:gap-6 gap-4">
+              {Gallery_Data.slice(3, 4).map((image, i) => (
+                <img
+                  className="object-cover w-full rounded-xl"
+                  key={i}
+                  src={image}
+                  alt="image"
+                />
+              ))}
+            </div>
+            <div className="flex xl:hidden md:gap-6 gap-4 justify-center items-center">
+              <div className="flex xl:hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
+                {Gallery_Data.slice(0, 2).map((image, i) => (
+                  <img
+                    className="object-cover rounded-xl"
+                    key={i}
+                    src={image}
+                    alt="image"
+                  />
+                ))}
+              </div>
+              <div className="flex xl:hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
+                {Gallery_Data.slice(5, 8).map((image, i) => (
+                  <img
+                    className="object-cover rounded-xl"
+                    key={i}
+                    src={image}
+                    alt="image"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

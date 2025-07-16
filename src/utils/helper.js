@@ -5,13 +5,13 @@ import pizza1 from '../assets/images/png/pizza-img-1.png'
 import pizza2 from '../assets/images/png/pizza-img-2.png'
 import pizza3 from '../assets/images/png/pizza-img-3.png'
 import pizza4 from '../assets/images/png/pizza-img-4.png'
-import gallery1 from '../assets/images/png/gallery-img-1.png'
-import gallery2 from '../assets/images/png/gallery-img-2.png'
-import gallery3 from '../assets/images/png/gallery-img-3.png'
-import gallery4 from '../assets/images/png/gallery-img-4.png'
-import gallery5 from '../assets/images/png/gallery-img-5.png'
-import gallery6 from '../assets/images/png/gallery-img-6.png'
-import gallery7 from '../assets/images/png/gallery-img-7.png'
+import galleryImg1 from "../assets/images/png/gallery-img-1.png";
+import galleryImg2 from "../assets/images/png/gallery-img-2.png";
+import galleryImg3 from "../assets/images/png/gallery-img-3.png";
+import galleryImg4 from "../assets/images/png/gallery-img-4.png";
+import galleryImg5 from "../assets/images/png/gallery-img-5.png";
+import galleryImg6 from "../assets/images/png/gallery-img-6.png";
+import galleryImg7 from "../assets/images/png/gallery-img-7.png";
 
 import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Support } from "./Icons";
 
@@ -116,25 +116,11 @@ export const QUICK_LINKS = [
 ];
 
 export const Gallery_Data = [
-    {
-        Image: gallery1,
-    },
-    {
-        Image: gallery2
-    },
-    {
-        Image: gallery3
-    },
-    {
-        Image: gallery4
-    },
-    {
-        Image: gallery5
-    },
-    {
-        Image: gallery6
-    },
-    {
-        Image: gallery7
-    }
+    galleryImg1,
+    galleryImg2,
+    galleryImg3,
+    galleryImg4,
+    galleryImg5,
+    galleryImg6,
+    galleryImg7,
 ]
