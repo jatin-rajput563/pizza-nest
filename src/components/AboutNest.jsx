@@ -1,12 +1,12 @@
 import React from "react";
 import { AboutNest_Data } from "../utils/helper";
 import pizzaManimg from "../assets/images/png/nestpizaman-img.png";
-import LeftPizza from 'src/assets/images/png/about-left-pizza.png'
+import LeftPizza from "../assets/images/png/about-left-pizza.png";
 
 const AboutNest = () => {
   return (
     <>
-      <div className="pt-16 md:pb-[48px] md:pt-[100px] relative">
+      <div id="about" className="pt-16 md:pb-[48px] md:pt-[100px] relative">
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10 text-center lg:text-left">
             <div className="lg:w-1/2 flex py-[22px] sm:py-[44px] md:py-[77px] flex-col items-center lg:items-start">

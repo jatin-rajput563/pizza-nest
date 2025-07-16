@@ -11,23 +11,30 @@ const Header = () => {
   };
 
   return (
-    <header className=" pt-6 pb-[22px] w-full relative z-50 px-4">
+    <header className="pt-3 sm:pt-4 md:pt-5 lg:pt-6 pb-[12px] sm:pb-4 md:pb-5 lg:pb-[22px] w-full relative z-50 px-4">
       <div className="container mx-auto max-w-[1140px] flex items-center justify-between">
         <a
           href="/"
-          className="font-semibold text-[34px] z-10 bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent"
+          className="font-medium text-[25px] sm:text-[28px] md:text-[34px] z-10 bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent"
         >
           Pizza Nest
         </a>
-        <ul className="hidden lg:flex items-center gap-8 font-semibold text-base">
+        <ul className="hidden lg:flex items-center gap-6 font-semibold text-base">
           {nav_Links.map((link, index) => (
-            <li key={index}>
-              <a href={link.href} className="text-[#787878] leading-[160%] ">
+            <li key={index} className="relative group">
+              <a
+                href={link.href}
+                className="relative z-10 text-base leading-[160%] text-muted-gray transition-all duration-300 
+                   group-hover:bg-clip-text group-hover:text-transparent 
+                   group-hover:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)]"
+              >
                 {link.label}
               </a>
+              <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 transition-all duration-300 group-hover:w-full bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]"></span>
             </li>
           ))}
         </ul>
+
         <div className="hidden lg:block">
           <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
         </div>
@@ -69,7 +76,7 @@ const Header = () => {
             {link.label}
           </a>
         ))}
-        <CustomBtn />
+        <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
       </div>
     </header>
   );

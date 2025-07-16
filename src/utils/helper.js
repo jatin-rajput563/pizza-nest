@@ -22,11 +22,11 @@ import tabsImg3 from "../assets/images/png/tabs-img-3.png"
 import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Order, PizzaSlice, Star, Support, Track } from "./Icons";
 
 export const nav_Links = [
-    { label: "Home", href: "/" },
-    { label: "Menu", href: "/" },
-    { label: "Customize Pizza", href: "/" },
-    { label: "Offers", href: "/" },
-    { label: "About Us", href: "/" },
+    { label: "Home", href: "#home" },
+    { label: "Menu", href: "#menu" },
+    { label: "Customize Pizza", href: "#largepizza" },
+    { label: "Offers", href: "#bestsller" },
+    { label: "About Us", href: "#about" },
 ];
 
 export const Hero_Data = [

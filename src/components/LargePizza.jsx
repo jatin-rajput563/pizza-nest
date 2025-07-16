@@ -6,7 +6,7 @@ import LargePizzaImg from "../assets/images/png/tasty-pizza-img.png";
 const LargePizza = () => {
   return (
     <>
-      <div className="bg-[url(../src/assets/images/png/tasty-bg-img.png)] bg-cover px-3">
+      <div id="largepizza" className="bg-[url(../src/assets/images/png/tasty-bg-img.png)] bg-cover px-3">
         <div className="max-w-[1194px] mx-auto">
           <div className="pt-[17px] pb-[33px] flex max-sm:flex-wrap justify-center gap-5 lg:gap-[44px] items-center">
             <div className="md:max-w-[400px] lg:max-w-[597px]">

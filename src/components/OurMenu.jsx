@@ -10,7 +10,7 @@ const OurMenu = () => {
   const categories = Object.keys(menuItems);
 
   return (
-    <div className=" pt-[100px] pb-[300px] bg-white">
+    <div id="menu" className=" pt-[100px] pb-[300px] bg-white">
       <div className="max-w-[1140px] mx-auto px-4">
         <div className="flex justify-center items-center gap-1.5">
           <Line />

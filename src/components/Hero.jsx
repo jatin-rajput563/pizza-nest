@@ -6,7 +6,7 @@ import LotiLine from "../assets/images/svg/loti-line-svg.svg";
 import AboutNest from "./AboutNest";
 const Hero = () => {
   return (
-    <div className="bg-[url(./assets/images/png/bg-layer.png)] bg-center bg-no-repeat bg-cover">
+    <div id="home" className="bg-[url(./assets/images/png/bg-layer.png)] bg-center bg-no-repeat bg-cover">
       <div className="px-[40px] 2xl:px-0">
         <div className="mx-auto max-w-[1360px]  rounded-3xl bg-[url(./assets/images/png/hero-bg.png)] pt-[131px] pb-[192px] pl-[110px] relative">
           {Hero_Data.map((item, index) => (

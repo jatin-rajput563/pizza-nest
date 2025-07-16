@@ -7,7 +7,7 @@ import CustomBtn from "./common/CustomBtn";
 const Bestseller = () => {
   return (
     <>
-      <div className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-16">
+      <div id="bestsller" className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-16">
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex items-center justify-center pb-2 gap-3 flex-wrap">
             <div className="gradient-border w-[60px] h-[1px]"></div>
