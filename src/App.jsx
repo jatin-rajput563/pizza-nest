@@ -11,6 +11,7 @@ import Craving from "./components/Craving";
 import Gallery from "./components/Gallery";
 import PerfectPizza from "./components/PerfectPizza";
 import Testimonial from "./components/Testimonial";
+import OurMenu from "./components/OurMenu";
 
 const lenis = new Lenis();
 lenis.on("scroll", (e) => {
@@ -30,6 +31,7 @@ function App() {
       <Hero />
       <Delicious />
       <Bestseller />
+      <OurMenu />
       <LargePizza />
       <Delivery />
       <PerfectPizza />

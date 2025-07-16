@@ -15,8 +15,11 @@ import galleryImg7 from "../assets/images/png/gallery-img-7.png";
 import userAvatar1 from "../assets/images/png/testimonial-user-img-1.png";
 import userAvatar2 from "../assets/images/png/testimonial-user-img-2.png";
 import userAvatar3 from "../assets/images/png/testimonial-user-img-3.png";
+import tabsImg1 from "../assets/images/png/tabs-img-1.png"
+import tabsImg2 from "../assets/images/png/tabs-img-2.png"
+import tabsImg3 from "../assets/images/png/tabs-img-3.png"
 
-import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Order, PizzaSlice, Support, Track } from "./Icons";
+import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Order, PizzaSlice, Star, Support, Track } from "./Icons";
 
 export const nav_Links = [
     { label: "Home", href: "/" },
@@ -168,4 +171,126 @@ export const Testimonials_Avatar = [
     userAvatar1,
     userAvatar2,
     userAvatar3
-]
+];
+
+export const Tabs_Data = {
+    All: [
+        {
+            name: "Farmhouse Magic",
+            price: "₹229 / ₹359 / ₹499",
+            desc: "Onion, capsicum, tomato, grilled mushroom, mozzarella cheese",
+            image: tabsImg1,
+            icon: Star,
+        },
+        {
+            name: "Masala Paneer",
+            price: "₹279 / ₹399 / ₹519",
+            desc: "Masala marinated paneer, sautéed onion, capsicum, mozzarella cheese",
+            image: tabsImg2,
+            icon: Star,
+        },
+        {
+            name: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: tabsImg3,
+            icon: Star,
+        },
+    ],
+
+    "Veg Pizzas": [
+        {
+            name: "Cheesy Garden Feast",
+            price: "₹249 / ₹379 / ₹499",
+            desc: "Loaded with corn, capsicum, onions, jalapenos & cheese",
+            image: tabsImg1,
+            icon: Star,
+        },
+        {
+            name: "Classic Paneer Tikka",
+            price: "₹299 / ₹429 / ₹549",
+            desc: "Spicy paneer cubes, red paprika, and mozzarella on tangy sauce",
+            image: tabsImg2,
+            icon: Star,
+        },
+        {
+            name: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: tabsImg3,
+            icon: Star,
+        },
+    ],
+
+    "Non-Veg Pizzas": [
+        {
+            name: "Pepperoni Overload",
+            price: "₹349 / ₹479 / ₹599",
+            desc: "Double pepperoni slices with smoky cheese blend",
+            image: tabsImg3,
+            icon: Star,
+        },
+        {
+            name: "Chicken Supreme",
+            price: "₹319 / ₹449 / ₹579",
+            desc: "Grilled chicken, capsicum, onion, and hot garlic sauce",
+            image: tabsImg1,
+            icon: Star,
+        },
+        {
+            name: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: tabsImg3,
+            icon: Star,
+        },
+    ],
+
+    "Combos & Drinks": [
+        {
+            name: "Duo Combo Deal",
+            price: "₹499",
+            desc: "2 Regular Pizzas + Garlic Bread + 2 Drinks",
+            image: tabsImg2,
+            icon: Star,
+        },
+        {
+            name: "Family Feast Box",
+            price: "₹899",
+            desc: "4 Regular Pizzas + 2 Garlic Breads + 4 Beverages",
+            image: tabsImg3,
+            icon: Star,
+        },
+        {
+            name: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: tabsImg3,
+            icon: Star,
+        },
+    ],
+
+    "Sides & Dips": [
+        {
+            name: "Cheese Garlic Bread",
+            price: "₹149",
+            desc: "Cheesy stuffed garlic bread with herb seasoning",
+            image: tabsImg1,
+            icon: Star,
+        },
+        {
+            name: "Spicy Mayo Dip",
+            price: "₹49",
+            desc: "Zesty mayo dip perfect for crusts and sides",
+            image: tabsImg2,
+            icon: Star,
+        },
+        {
+            name: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: tabsImg3,
+            icon: Star,
+        },
+    ],
+};
