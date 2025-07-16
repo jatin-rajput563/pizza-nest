@@ -13,7 +13,7 @@ import galleryImg5 from "../assets/images/png/gallery-img-5.png";
 import galleryImg6 from "../assets/images/png/gallery-img-6.png";
 import galleryImg7 from "../assets/images/png/gallery-img-7.png";
 
-import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Support } from "./Icons";
+import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Order, PizzaSlice, Support, Track } from "./Icons";
 
 export const nav_Links = [
     { label: "Home", href: "/" },
@@ -123,4 +123,22 @@ export const Gallery_Data = [
     galleryImg5,
     galleryImg6,
     galleryImg7,
+];
+
+export const HOW_IT_WORKS_DATA = [
+    {
+        icon: PizzaSlice,
+        title: "Choose Your Pizza",
+        description: "Browse our mouthwatering menu and pick your favorite from a wide range of cheesy, spicy, and desi-delicious pizzas.",
+    },
+    {
+        icon: Order,
+        title: "Place Your Order",
+        description: "Confirm your cart, choose delivery or pickup, and pay securely — all in under a minute.",
+    },
+    {
+        icon: Track,
+        title: "Track & Enjoy",
+        description: "Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness and dig in!",
+    }
 ]

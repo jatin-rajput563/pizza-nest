@@ -7,7 +7,7 @@ import CustomBtn from "../components/common/CustomBtn";
 const Delicious = () => {
   return (
     <>
-      <div className="py-[100px] relative overflow-hidden">
+      <div className="py-[100px] relative ">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex max-lg:flex-wrap justify-center items-center gap-4 sm:gap-6">
             {Delicious_Data.map((item, index) => (

@@ -9,7 +9,8 @@ import LargePizza from "./components/LargePizza";
 import Footer from "./components/Footer";
 import Craving from "./components/Craving";
 import Gallery from "./components/Gallery";
-// import PerfectPizza from "./components/PerfectPizza";
+import PerfectPizza from "./components/PerfectPizza";
+import Testimonial from "./components/Testimonial";
 
 const lenis = new Lenis();
 lenis.on("scroll", (e) => {
@@ -31,7 +32,8 @@ function App() {
       <Bestseller />
       <LargePizza />
       <Delivery />
-      {/* <PerfectPizza /> */}
+      <PerfectPizza />
+      <Testimonial />
       <Gallery />
       <Craving />
       <Footer />
