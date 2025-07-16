@@ -28,7 +28,7 @@ const Footer = () => {
                 {SOCIAL_ICON.map((item, index) => (
                   <a
                     key={index}
-                    className="size-[52px] bg-prime rounded-full flex justify-center items-center"
+                    className="size-[52px] bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] rounded-full flex justify-center items-center"
                     href={item.socialLink}
                     target="_blank"
                   >
@@ -87,9 +87,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-3 border-[#D1D1D166] w-full mt-6 sm:mt-8"></div>
-          <CustomDescription className="text-[#575757] max-sm:text-sm py-4 text-center">
-            Copyright Pizza Nest © 2025, All rights reserved{" "}
-          </CustomDescription>
+          <CustomDescription
+            DescClass="text-[#575757] max-sm:text-sm py-4 text-center"
+            descText="Copyright Pizza Nest © 2025, All rights reserved "
+          />
         </div>
       </div>
     </>
