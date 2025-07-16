@@ -6,21 +6,24 @@ import LotiLine from "../assets/images/svg/loti-line-svg.svg";
 import AboutNest from "./AboutNest";
 const Hero = () => {
   return (
-    <div id="home" className="bg-[url(./assets/images/png/bg-layer.png)] bg-center bg-no-repeat bg-cover">
-      <div className="px-[40px] 2xl:px-0">
-        <div className="mx-auto max-w-[1360px]  rounded-3xl bg-[url(./assets/images/png/hero-bg.png)] pt-[131px] pb-[192px] pl-[110px] relative">
+    <div
+      id="home"
+      className="bg-[url(./assets/images/png/bg-layer.png)] bg-center bg-no-repeat bg-cover"
+    >
+      <div className="md:px-[40px] px-6 2xl:px-0">
+        <div className="mx-auto max-w-[1360px] rounded-3xl max-md:px-4 bg-[url(./assets/images/png/hero-bg.png)] pt-[40px] pb-[40px] sm:pt-[80px] sm:pb-[120px] md:pt-[100px] md:pb-[150px] lg:pt-[131px] lg:pb-[192px] md:pl-[110px] relative">
           {Hero_Data.map((item, index) => (
             <div key={index}>
-              <h1 className="text-white max-w-[644px] font-bold text-[64px] leading-[120%] ff-nunito">
+              <h1 className="text-white max-w-[644px] font-bold text-4xl lg:text-[64px] leading-[120%] ff-nunito">
                 {item.heading}
               </h1>
               <p className="max-w-[588px] mt-4 leading-[160%] text-[#EFEFEF]">
                 {item.description}
               </p>
-              <div className="flex gap-6 mt-8">
-                <CustomBtn btnText={"Order Now"} />
+              <div className="flex flex-wrap gap-6 mt-8">
+                <CustomBtn btnClass="whitespace-nowrap" btnText={"Order Now"} />
                 <CustomBtn
-                  btnClass="backdrop-blur-[30.9px] bg-black"
+                  btnClass="backdrop-blur-[30.9px] whitespace-nowrap bg-black"
                   btnText={"View Full Menu"}
                 />
               </div>
@@ -42,6 +45,7 @@ const Hero = () => {
             src={PriceBadge}
             alt="price-badge"
           />
+          <p className="absolute">₹ 299</p>
           <img
             className="absolute top-[173px] right-[394px]"
             src={LotiLine}

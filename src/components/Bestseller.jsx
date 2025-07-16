@@ -3,18 +3,28 @@ import CustomHeading from "./common/CustomHeading";
 import CustomDescription from "./common/CustomDescription";
 import { Bestsleller_data } from "../utils/helper";
 import CustomBtn from "./common/CustomBtn";
+import { Line } from "../utils/Icons.jsx";
 
 const Bestseller = () => {
   return (
     <>
-      <div id="bestsller" className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-16">
+      <div
+        id="bestsller"
+        className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
+      >
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex items-center justify-center pb-2 gap-3 flex-wrap">
-            <div className="gradient-border w-[60px] h-[1px]"></div>
-            <p className="font-bold text-lg bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
-              Best Sellers
-            </p>
-            <div className="custom-gradient-border w-[60px] h-[1px]"></div>
+            <div className=" flex justify-center items-center gap-1.5 mb-2">
+              <div className="">
+                <Line />
+              </div>
+              <h4 className="text-prime-gradient text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
+                Best Sellers
+              </h4>
+              <div className=" rotate-[180deg]">
+                <Line />
+              </div>
+            </div>
           </div>
           <CustomHeading
             headClass="text-center text-2xl sm:text-3xl md:text-4xl"
@@ -24,7 +34,7 @@ const Bestseller = () => {
             DescClass="text-center pt-4 max-w-2xl mx-auto text-sm sm:text-base"
             descText="Tried, tested, and totally loved. These pizzas are always a crowd favorite."
           />
-          <div className="flex max-[1024px]:flex-wrap justify-center items-stretch gap-6 mt-[80px]">
+          <div className="flex max-[1024px]:flex-wrap justify-center items-stretch gap-6 mt-[20px] sm:mt-[40px] md:mt-[80px]">
             {Bestsleller_data.map((items, index) => (
               <div
                 key={index}

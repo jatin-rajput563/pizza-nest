@@ -7,7 +7,10 @@ import CustomHeading from "./common/CustomHeading";
 const AboutNest = () => {
   return (
     <>
-      <div id="about" className="pt-16 md:pb-[48px] md:pt-[100px] relative">
+      <div
+        id="about"
+        className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative"
+      >
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10 text-center lg:text-left">
             <div className="lg:w-[60%] flex py-[22px] sm:py-[44px] md:py-[77px] flex-col">
@@ -15,10 +18,13 @@ const AboutNest = () => {
                 <p className="font-bold text-lg leading-[120%] text-prime">
                   About Us
                 </p>
-                <div className="w-[60px] h-[1px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]"></div>
+                <div className="w-[60px] h-[1px] bg-prime"></div>
               </div>
-              <CustomHeading headText="Welcome to the Nest" headClass="pt-2 text-left" />
-              <ul className="list-disc marker:text-[#4D4D4D] pt-4 pl-[25px]">
+              <CustomHeading
+                headText="Welcome to the Nest"
+                headClass="pt-2 text-left"
+              />
+              <ul className="list-disc marker:text-dark-gray pt-4 pl-[25px]">
                 <li>
                   <p className="max-w-[518px] text-sm sm:text-base leading-[160%] text-dark-gray text-left">
                     At PizzaNest, we believe that pizza is more than just food —
@@ -42,11 +48,13 @@ const AboutNest = () => {
                 {AboutNest_Data.map((item, index) => (
                   <div
                     key={index}
-                    className={`sm:w-auto ${index === 1 ? "min-[1050px]:mt-3" : ""}`}
+                    className={`sm:w-auto ${
+                      index === 1 ? "min-[1050px]:mt-3" : ""
+                    }`}
                   >
                     <div className="w-[150px] sm:w-[170px] p-5 bg-white items-center flex flex-col shadow-lg rounded-xl border-2 border-dashed border-[#F67A21]/20 hover:translate-y-2 transition-all duration-300">
                       <item.icon />
-                      <p className="pt-2 ff-nunito leading-[160%] text-[#474747] text-center text-sm whitespace-nowrap">
+                      <p className="pt-2 ff-nunito leading-[160%] text-dark-gray text-center text-sm whitespace-nowrap">
                         {item.name}
                       </p>
                     </div>

@@ -76,7 +76,7 @@ const Header = () => {
             {link.label}
           </a>
         ))}
-        <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
+       <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
       </div>
     </header>
   );
