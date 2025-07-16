@@ -1,13 +1,13 @@
 import React from "react";
-import CustomDescription from "./common/CustomDescription";
-import CustomHeading from "./common/CustomHeading";
-import CustomBtn from "./common/CustomBtn";
-import LargePizzaImg from "../assets/images/png/largeTwo-pizza-img.png";
+// import CustomDescription from "./common/CustomDescription";
+// import CustomHeading from "./common/CustomHeading";
+// import CustomBtn from "./common/CustomBtn";
+// import LargePizzaImg from "../assets/images/png/largeTwo-pizza-img.png";
 
 const LargePizza = () => {
   return (
     <>
-      <div className="bg-[url(../src/assets/images/png/largePizza-bg.png)] bg-cover bg-center bg-no-repeat pt-[78px] pb-[94px]">
+      {/* <div className="bg-[url(../src/assets/images/png/largePizza-bg.png)] bg-cover bg-center bg-no-repeat pt-[78px] pb-[94px]">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex flex-wrap flex-row -mx-3 ">
             <div className="w-1/2">
@@ -30,7 +30,7 @@ const LargePizza = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

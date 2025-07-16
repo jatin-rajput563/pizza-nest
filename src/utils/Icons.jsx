@@ -255,3 +255,52 @@ export const Support = () => (
     </defs>
   </svg>
 );
+
+export const CircleTick = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15.0311 8.84368C14.4686 11.6562 12.348 14.3044 9.37233 14.8962C7.92106 15.1852 6.41561 15.009 5.07033 14.3926C3.72505 13.7763 2.60851 12.7512 1.87971 11.4633C1.1509 10.1755 0.846984 8.69055 1.01122 7.21994C1.17546 5.74932 1.79949 4.36801 2.79445 3.27268C4.8352 1.02493 8.28107 0.406179 11.0936 1.53118"
+      stroke="url(#paint0_linear_133_5663)"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M5.46875 7.71875L8.28125 10.5312L15.0312 3.21875"
+      stroke="url(#paint1_linear_133_5663)"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_133_5663"
+        x1="0.967774"
+        y1="11.7669"
+        x2="15.4909"
+        y2="10.738"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#EC6112" />
+        <stop offset="1" stop-color="#FF902E" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_133_5663"
+        x1="5.46875"
+        y1="8.83193"
+        x2="15.3092"
+        y2="7.92119"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#EC6112" />
+        <stop offset="1" stop-color="#FF902E" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
