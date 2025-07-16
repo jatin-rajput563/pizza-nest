@@ -5,6 +5,13 @@ import pizza1 from '../assets/images/png/pizza-img-1.png'
 import pizza2 from '../assets/images/png/pizza-img-2.png'
 import pizza3 from '../assets/images/png/pizza-img-3.png'
 import pizza4 from '../assets/images/png/pizza-img-4.png'
+import gallery1 from '../assets/images/png/gallery-img-1.png'
+import gallery2 from '../assets/images/png/gallery-img-2.png'
+import gallery3 from '../assets/images/png/gallery-img-3.png'
+import gallery4 from '../assets/images/png/gallery-img-4.png'
+import gallery5 from '../assets/images/png/gallery-img-5.png'
+import gallery6 from '../assets/images/png/gallery-img-6.png'
+import gallery7 from '../assets/images/png/gallery-img-7.png'
 
 import { Chefs, FacebookSvg, Food, InstaSvg, LinkdinSvg, Support } from "./Icons";
 
@@ -107,3 +114,27 @@ export const SUPPORT_LINKS = [
 export const QUICK_LINKS = [
     "Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"
 ];
+
+export const Gallery_Data = [
+    {
+        Image: gallery1,
+    },
+    {
+        Image: gallery2
+    },
+    {
+        Image: gallery3
+    },
+    {
+        Image: gallery4
+    },
+    {
+        Image: gallery5
+    },
+    {
+        Image: gallery6
+    },
+    {
+        Image: gallery7
+    }
+]

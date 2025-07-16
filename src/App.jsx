@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import LargePizza from "./components/LargePizza";
 import Footer from "./components/Footer";
 import Craving from "./components/Craving";
+import Gallery from "./components/Gallery";
 // import PerfectPizza from "./components/PerfectPizza";
 
 const lenis = new Lenis();
@@ -31,6 +32,7 @@ function App() {
       <LargePizza />
       <Delivery />
       {/* <PerfectPizza /> */}
+      <Gallery />
       <Craving />
       <Footer />
     </>
