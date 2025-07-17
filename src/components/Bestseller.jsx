@@ -10,7 +10,7 @@ const Bestseller = () => {
     <>
       <div
         id="bestsller"
-        className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
+        className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
       >
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex items-center justify-center pb-2 gap-3 flex-wrap">

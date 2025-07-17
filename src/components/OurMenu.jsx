@@ -14,7 +14,7 @@ const OurMenu = () => {
   return (
     <div
       id="menu"
-      className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-white relative"
+      className="py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-white relative"
     >
       <div className="max-w-[1140px] mx-auto px-4">
         <div className="flex justify-center items-center gap-1.5">

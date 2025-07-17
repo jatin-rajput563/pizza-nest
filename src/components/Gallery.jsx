@@ -9,7 +9,7 @@ import LeftPizza from "../assets/images/png/left-pizza.png";
 const Gallery = () => {
   return (
     <>
-      <div className="px-5 py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative">
+      <div className="px-5 py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative">
         <div className="max-w-[1140px] w-full mx-auto flex justify-center items-center flex-col">
           <div className=" flex justify-center items-center gap-1.5 mb-2">
             <div className="">

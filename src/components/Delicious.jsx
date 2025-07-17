@@ -7,13 +7,13 @@ import CustomBtn from "../components/common/CustomBtn";
 const Delicious = () => {
   return (
     <>
-      <div className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative ">
-        <div className="max-w-[1140px] mx-auto px-4">
+      <div className="py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative ">
+        <div className="max-w-[1140px] mx-auto px-4 xl:px-0">
           <div className="flex max-lg:flex-wrap justify-center items-center gap-4 sm:gap-6">
             {Delicious_Data.map((item, index) => (
               <div
                 key={index}
-                className="bg-[url(../src/assets/images/png/Delicious-bg-1.png)] w-[558px] rounded-[12px] relative sm:pb-[63px] pb-[33px] sm:pt-[60px] pt-[30px] pl-[32px] overflow-hidden"
+                className="bg-[url(../src/assets/images/png/Delicious-bg-1.png)] max-w-[558px] w-full h-[220px] sm:h-[319px] rounded-[12px] relative sm:pb-[63px] pb-[33px] sm:pt-[60px] pt-[30px] pl-[32px] overflow-hidden"
               >
                 <img
                   className="absolute right-0 pointer-events-none -bottom-[10px] max-w-[180px] sm:max-w-[385px]"
@@ -37,7 +37,7 @@ const Delicious = () => {
                   {item.time}
                 </p>
                 <CustomBtn
-                  btnClass="font-semibold !py-[9px] !px-[16.1px] mt-[16px]"
+                  btnClass="font-semibold !py-[6px] !px-[12px] sm:!py-[8px] sm:!px-[14px] md:!py-[9px] md:!px-[16.1px] max-sm:!rounded-[6px] mt-[16px]"
                   btnText={"Order Now"}
                 />
               </div>

@@ -13,7 +13,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
+      <div className="py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
         <div className="max-w-[1140px] mx-auto px-4  relative">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">

@@ -8,7 +8,10 @@ import { HOW_IT_WORKS_DATA } from "../utils/helper";
 const PerfectPizza = () => {
   return (
     <>
-      <div id="hlo" className="px-5 py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px]">
+      <div
+        id="hlo"
+        className="px-5 py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
+      >
         <div className="max-w-[1140px] mx-auto">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">

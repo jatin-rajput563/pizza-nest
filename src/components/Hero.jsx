@@ -17,7 +17,7 @@ const Hero = () => {
           <CustomDescription
             descText=" At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites"
-            DescClass={"text-off-white mt-4 mb-8 max-w-[540px] w-full"}
+            DescClass={"text-on-white mt-4 mb-8 max-w-[540px] w-full leading-[160%]"}
           />
           <div className="flex flex-wrap flex-row gap-6 mb-6">
             <CustomBtn

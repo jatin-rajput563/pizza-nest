@@ -9,11 +9,11 @@ const AboutNest = () => {
     <>
       <div
         id="about"
-        className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[80px] relative"
+        className="pt-[40px] sm:pt-[60px] md:pt-[80px] lg:pt-[100px] pb-[40px] sm:pb-[49px] relative"
       >
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10 text-center lg:text-left">
-            <div className="lg:w-[60%] flex py-[22px] sm:py-[44px] md:py-[77px] flex-col">
+            <div className="lg:w-[60%] flex py-0 lg:py-[77px] flex-col">
               <div className="flex items-center gap-2">
                 <p className="font-bold text-lg leading-[120%] text-prime">
                   About Us
@@ -52,9 +52,9 @@ const AboutNest = () => {
                       index === 1 ? "min-[1050px]:mt-3" : ""
                     }`}
                   >
-                    <div className="w-[150px] sm:w-[170px] p-5 bg-white items-center flex flex-col shadow-lg rounded-xl border-2 border-dashed border-[#F67A21]/20 hover:translate-y-2 transition-all duration-300">
+                    <div className="w-[150px] sm:w-[170px] h-[122px] p-5 bg-white items-center flex flex-col shadow-lg rounded-xl border-2 border-dashed border-[#F67A21]/20 hover:translate-y-2 transition-all duration-300">
                       <item.icon />
-                      <p className="pt-2 ff-nunito leading-[160%] text-dark-gray text-center text-sm whitespace-nowrap">
+                      <p className="pt-2 ff-nunito leading-[160%] text-dark-gray text-center whitespace-nowrap">
                         {item.name}
                       </p>
                     </div>
