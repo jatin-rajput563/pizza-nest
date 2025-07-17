@@ -12,7 +12,7 @@ const Bestseller = () => {
         id="bestsller"
         className="bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
       >
-        <div className="max-w-[1140px] px-4 mx-auto">
+        <div className="max-w-[1140px] px-4 xl:px-0 mx-auto">
           <div className="flex items-center justify-center pb-2 gap-3 flex-wrap">
             <div className=" flex justify-center items-center gap-1.5 mb-2">
               <div className="">
@@ -38,7 +38,7 @@ const Bestseller = () => {
             {Bestsleller_data.map((items, index) => (
               <div
                 key={index}
-                className="w-full max-w-[267px] flex flex-col items-center p-6 border border-[#0000000F] rounded-tr-[12px] rounded-bl-[12px] bg-white max-[1024px]:mt-[50px]"
+                className="w-full max-w-[267px] min-h-[297px] sm:min-h-[329px] flex flex-col items-center p-6 border border-[#0000000F] rounded-tr-[12px] rounded-bl-[12px] bg-white max-[1024px]:mt-[50px]"
               >
                 <img
                   className="size-[130px] rounded-full -translate-y-[65%]"
@@ -55,7 +55,7 @@ const Bestseller = () => {
                   {items.details}
                 </p>
                 <CustomBtn
-                  btnClass="mt-3 !py-[9px] !px-[16.7px]"
+                  btnClass="mt-3 !py-[6px] !px-[12px] sm:!py-[8px] sm:!px-[14px] md:!py-[9px] md:!px-[16.7px]"
                   btnText="Order Now"
                 />
               </div>
