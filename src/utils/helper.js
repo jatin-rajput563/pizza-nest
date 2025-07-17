@@ -118,7 +118,12 @@ export const SUPPORT_LINKS = [
 ];
 
 export const QUICK_LINKS = [
-    "Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"
+    { label: "Home", href: "#home" },
+    { label: "About Us", href: "#about" },
+    { label: "Menu", href: "#menu" },,
+    { label: "Gallery", href: "#gallery" },
+    { label: "Testimonial", href: "#testimonial" },
+    { label: "Contact", href: "#contact" }
 ];
 
 export const Gallery_Data = [

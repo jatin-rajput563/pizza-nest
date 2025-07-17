@@ -18,7 +18,7 @@ const Bestseller = () => {
               <div className="">
                 <Line />
               </div>
-              <h4 className="text-prime-gradient text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
+              <h4 className="text-prime-gradient text-lg font-bold leading-[22px] text-prime">
                 Best Sellers
               </h4>
               <div className=" rotate-[180deg]">
@@ -34,11 +34,11 @@ const Bestseller = () => {
             DescClass="text-center pt-4 max-w-2xl mx-auto text-sm sm:text-base"
             descText="Tried, tested, and totally loved. These pizzas are always a crowd favorite."
           />
-          <div className="flex max-[1024px]:flex-wrap justify-center items-stretch gap-6 mt-[20px] sm:mt-[40px] md:mt-[80px]">
+          <div className="flex max-[1024px]:flex-wrap justify-center items-stretch gap-6 mt-[40px] sm:mt-[80px] md:mt-[110px]">
             {Bestsleller_data.map((items, index) => (
               <div
                 key={index}
-                className="w-full max-w-[267px] flex flex-col items-center shadow-lg p-6 border border-[#0000000F] rounded-tr-[12px] rounded-bl-[12px] bg-white max-[1024px]:mt-[50px]"
+                className="w-full max-w-[267px] flex flex-col items-center p-6 border border-[#0000000F] rounded-tr-[12px] rounded-bl-[12px] bg-white max-[1024px]:mt-[50px]"
               >
                 <img
                   className="size-[130px] rounded-full -translate-y-[65%]"

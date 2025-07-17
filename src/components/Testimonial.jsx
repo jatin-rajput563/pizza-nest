@@ -13,8 +13,8 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="pt-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
-        <div className="max-w-[1140px] mx-auto px-4  relative" >
+      <div className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
+        <div className="max-w-[1140px] mx-auto px-4  relative">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">
               <Line />
@@ -35,7 +35,7 @@ const Testimonial = () => {
               <img
                 src={pizzaImg}
                 alt="Pizza"
-                className="w-full sm:flex hidden rounded-xl object-cover "
+                className="w-full sm:flex hidden rounded-xl object-cover"
               />
               <div className="sm:absolute left-[-36px] top-[145px] flex sm:flex-col max-sm:w-full justify-center  items-center size-[74px] gap-3">
                 {Testimonials_Avatar.map((avatar, i) => (
@@ -44,7 +44,7 @@ const Testimonial = () => {
                     src={avatar}
                     alt={`avatar-${i}`}
                     onClick={() => setActiveAvatar(i)}
-                    className={`cursor-pointer rounded-full transition-all duration-300 ${
+                    className={`cursor-pointer rounded-full transition-all mt-[40px] sm:mt-0 duration-300 ${
                       i === activeAvatar
                         ? "sm:size-[74px] size-25"
                         : "sm:size-15 size-20"

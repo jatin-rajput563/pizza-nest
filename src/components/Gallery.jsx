@@ -2,11 +2,14 @@ import React from "react";
 import CustomHeading from "./common/CustomHeading";
 import { Line } from "../utils/Icons.jsx";
 import { Gallery_Data } from "../utils/helper.js";
+import CustomBtn from "./common/CustomBtn.jsx";
+
+import LeftPizza from "../assets/images/png/left-pizza.png";
 
 const Gallery = () => {
   return (
     <>
-      <div className="px-5 py-25">
+      <div className="px-5 py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative">
         <div className="max-w-[1140px] w-full mx-auto flex justify-center items-center flex-col">
           <div className=" flex justify-center items-center gap-1.5 mb-2">
             <div className="">
@@ -107,7 +110,16 @@ const Gallery = () => {
               </div>
             </div>
           </div>
+          <CustomBtn
+            btnClass="mt-[10px] sm:mt-[20px] md:mt-[32px] !px-[33.2px]"
+            btnText="View More"
+          />
         </div>
+        <img
+          className="absolute right-0 -top-[47px] sm:top-0 w-full max-w-[90px] sm:max-w-[150px] pointer-events-none animate-pizzaFloat"
+          src={LeftPizza}
+          alt="left-pizza"
+        />
       </div>
     </>
   );

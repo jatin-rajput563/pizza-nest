@@ -4,11 +4,12 @@ import CustomDescription from "./common/CustomDescription";
 import CustombBtn from "./common/CustomBtn";
 import { CircleTick } from "../utils/Icons";
 import deliveryImg from "../assets/images/png/delivery-img.png";
+import tomato from "../assets/images/png/right-tomato-img.png";
 
 const Delivery = () => {
   return (
     <>
-      <div className="py-[30px] sm:py-[60px] md:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
+      <div className="py-[30px] sm:py-[60px] md:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center relative">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex flex-wrap-reverse lg:flex-nowrap items-center justify-between -mx-3">
             <div className="w-full lg:w-1/2 px-3 text-left">
@@ -56,6 +57,11 @@ const Delivery = () => {
             </div>
           </div>
         </div>
+        <img
+          className="absolute -bottom-[100px] sm:-bottom-[150px] -left-[120px] sm:-left-[232px] max-w-[209px] sm:max-w-[409px] w-full animate-spinScale pointer-events-none"
+          src={tomato}
+          alt="tomato-img"
+        />
       </div>
     </>
   );

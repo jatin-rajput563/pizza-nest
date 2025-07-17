@@ -9,7 +9,7 @@ const AboutNest = () => {
     <>
       <div
         id="about"
-        className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] relative"
+        className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[80px] relative"
       >
         <div className="max-w-[1140px] px-4 mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10 text-center lg:text-left">

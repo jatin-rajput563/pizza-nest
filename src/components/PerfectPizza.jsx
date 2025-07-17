@@ -8,7 +8,7 @@ import { HOW_IT_WORKS_DATA } from "../utils/helper";
 const PerfectPizza = () => {
   return (
     <>
-      <div id="hlo" className="px-5 py-25">
+      <div id="hlo" className="px-5 py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px]">
         <div className="max-w-[1140px] mx-auto">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">
@@ -22,7 +22,7 @@ const PerfectPizza = () => {
             </div>
           </div>
           <CustomHeading
-            headClass="font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2"
+            headClass=" text-center mx-auto max-w-[569px]  mt-2"
             headText="Your Perfect Pizza in Just 3 Easy Steps!"
           />
           <div className="pt-10 relative flex flex-wrap justify-center items-center gap-20 min-[776px]:gap-5 lg:gap-6 ">

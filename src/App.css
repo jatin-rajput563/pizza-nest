@@ -110,7 +110,3 @@ html {
 .bg-prime {
     background: var(--color-prime-gradient) !important;
 }
-
-.bg-prime-hover:hover {
-    background: var(--color-prime-gradient) !important;
-}

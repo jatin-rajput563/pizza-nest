@@ -4,13 +4,18 @@ import "react-tabs/style/react-tabs.css";
 import { Line } from "../utils/Icons";
 import CustomHeading from "./common/CustomHeading";
 import { Tabs_Data } from "../utils/helper";
+import LeftPizza from "../assets/images/png/about-left-pizza.png";
+import CustomBtn from "./common/CustomBtn";
 
 const OurMenu = () => {
   const menuItems = Tabs_Data;
   const categories = Object.keys(menuItems);
 
   return (
-    <div id="menu" className=" pt-[100px] pb-[300px] bg-white">
+    <div
+      id="menu"
+      className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-white relative"
+    >
       <div className="max-w-[1140px] mx-auto px-4">
         <div className="flex justify-center items-center gap-1.5">
           <Line />
@@ -26,7 +31,7 @@ const OurMenu = () => {
           headText="Explore Flavours, Pick Your Cravings"
         />
         <Tabs>
-          <TabList className="flex flex-wrap justify-center gap-4 mt-10">
+          <TabList className="flex overflow-x-auto whitespace-nowrap py-[10px] max-w-[906px] justify-start lg:justify-center items-center mx-auto gap-4 mt-[10px] sm:mt-[20px] md:mt-[30px] lg:mt-[40px]">
             {categories.map((cat, idx) => (
               <Tab
                 key={idx}
@@ -41,14 +46,17 @@ const OurMenu = () => {
             <TabPanel key={index}>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {menuItems[cat].map((item, index) => (
-                  <div key={index} className="relative">
+                  <div
+                    key={index}
+                    className="relative max-w-[364px] w-full mx-auto shadow-lg"
+                  >
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="max-w-[364px]"
+                      className="max-w-[364px] w-full"
                     />
-                    <div className="shadow-lg max-w-[324px] p-5 border bg-white border-[#EBEBEB] rounded-[8px] absolute -bottom-[160px] left-[20px]">
-                      <p className="text-orange-500 font-semibold text-2xl leading-[140%] text-center">
+                    <div className="lg:shadow-lg max-w-[324px] p-5 lg:border bg-white border-[#EBEBEB] rounded-[8px] ml-[20px] lg:ml-0 lg:absolute -bottom-[160px] left-[20px]">
+                      <p className="text-prime font-semibold text-2xl leading-[140%] text-center">
                         {item.price}
                       </p>
                       <h3 className="font-semibold text-2xl leading-[140%] text-center pt-[2px]">
@@ -67,7 +75,16 @@ const OurMenu = () => {
             </TabPanel>
           ))}
         </Tabs>
+        <CustomBtn
+          btnClass="mt-[50px] !px-[33.1px]  lg:mt-[200px] mx-auto flex"
+          btnText="View More"
+        />
       </div>
+      <img
+        className="absolute left-0 -top-[62px] sm:top-0 w-full max-w-[90px] sm:max-w-[150px] pointer-events-none animate-pizzaFloat"
+        src={LeftPizza}
+        alt="left-pizza"
+      />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { nav_Links } from "../utils/helper";
 import CustomBtn from "../components/common/CustomBtn";
 
@@ -7,8 +7,11 @@ const Header = () => {
 
   const toggleNavbar = () => {
     setOpen(!open);
-    document.body.classList.toggle("overflow-hidden");
   };
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "auto";
+  }, [open]);
 
   return (
     <header className="pt-3 sm:pt-4 md:pt-5 lg:pt-6 pb-[12px] sm:pb-4 md:pb-5 lg:pb-[22px] w-full relative z-50 px-4">
@@ -76,7 +79,7 @@ const Header = () => {
             {link.label}
           </a>
         ))}
-       <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
+        <CustomBtn btnClass={"capitalize"} btnText={"Contact Us"} />
       </div>
     </header>
   );
