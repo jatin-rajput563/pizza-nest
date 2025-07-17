@@ -13,13 +13,13 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
+      <div className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center">
         <div className="max-w-[1140px] mx-auto px-4  relative">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">
               <Line />
             </div>
-            <h4 className="text-prime-gradient text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent ">
+            <h4 className="text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent ">
               Testimonial
             </h4>
             <div className=" rotate-[180deg]">
@@ -30,8 +30,8 @@ const Testimonial = () => {
             headClass="text-center pt-2"
             headText="What Our Customers Say"
           />
-          <div className="flex flex-col md:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
-            <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10 ">
+          <div className="flex flex-col md:flex-row max-lg:justify-center max-lg:items-center relative gap-10 mt-[20px] sm:mt-[40px] md:mt-[60px]">
+            <div className="relative w-full max-w-[523px] sm:ml-[37px] lg:pb-[76px] pb-10 ">
               <img
                 src={pizzaImg}
                 alt="Pizza"
@@ -74,10 +74,10 @@ const Testimonial = () => {
                   </h4>
                   <p className="text-base leading-[26px] mb-6">{item.role}</p>
                   <div className="flex items-center gap-1">
-                    <button className="prevBtn bg-prime rounded-[4px] !px-[15px] !py-3.5 flex items-center justify-center transition">
+                    <button className="prevBtn bg-prime rounded-[4px] cursor-pointer hover:scale-105 transition-all duration-300 !px-[15px] !py-3.5 flex items-center justify-center">
                       <RightArrow />
                     </button>
-                    <button className="nextBtn bg-prime rounded-[4px] text-white flex items-center justify-center !px-[15px] !py-3.5 transition">
+                    <button className="nextBtn bg-prime rounded-[4px] cursor-pointer hover:scale-105 transition-all duration-300 text-white flex items-center justify-center !px-[15px] !py-3.5">
                       <LeftArrow />
                     </button>
                   </div>

@@ -30,7 +30,7 @@ const Delicious = () => {
                 <p className="text-xl sm:text-2xl md:text-[28px] leading-[160%] text-prime">
                   {item.heading}
                 </p>
-                <h2 className="text-white uppercase font-semibold text-2xl sm:text-3xl md:text-[36px] leading-[160%] ">
+                <h2 className="text-white uppercase font-semibold text-2xl text-soft-gray sm:text-3xl md:text-[36px] leading-[160%] ">
                   {item.name}
                 </h2>
                 <p className="text-base sm:text-lg md:text-xl leading-[160%] text-[#E9E9E9]">

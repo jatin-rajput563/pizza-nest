@@ -8,16 +8,13 @@ import { HOW_IT_WORKS_DATA } from "../utils/helper";
 const PerfectPizza = () => {
   return (
     <>
-      <div
-        id="hlo"
-        className="px-5 py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px]"
-      >
+      <div id="hlo" className="px-5 py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px]">
         <div className="max-w-[1140px] mx-auto">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">
               <Line />
             </div>
-            <h4 className="text-prime-gradient text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent ">
+            <h4 className="text-prime text-lg font-bold leading-[22px]">
               How It Works
             </h4>
             <div className=" rotate-[180deg]">

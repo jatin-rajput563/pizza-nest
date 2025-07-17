@@ -111,7 +111,9 @@ const Gallery = () => {
             </div>
           </div>
           <CustomBtn
-            btnClass="mt-[10px] sm:mt-[20px] md:mt-[32px] !px-[33.2px]"
+            btnClass="mt-[20px] md:mt-[32px] !px-[20px] !py-[10px] 
+    sm:!px-[28px] sm:!py-[12px] 
+    md:!px-[33.2px] md:!py-[15px]"
             btnText="View More"
           />
         </div>

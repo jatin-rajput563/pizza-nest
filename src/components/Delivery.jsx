@@ -9,8 +9,8 @@ import tomato from "../assets/images/png/right-tomato-img.png";
 const Delivery = () => {
   return (
     <>
-      <div className="py-[30px] sm:py-[60px] md:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center relative">
-        <div className="max-w-[1140px] mx-auto px-4">
+      <div className="py-[30px] md:py-[60px] lg:py-[100px] bg-[url(./assets/images/png/bestsleer-bg-layer.png)] bg-cover bg-no-repeat bg-center relative">
+        <div className="max-w-[1140px] mx-auto px-4 xl:px-0">
           <div className="flex flex-wrap-reverse lg:flex-nowrap items-center justify-between -mx-3">
             <div className="w-full lg:w-1/2 px-3 text-left">
               <div className="flex items-center gap-[6px] pt-[10px]">
@@ -48,9 +48,9 @@ const Delivery = () => {
                 btnText="Order Now"
               />
             </div>
-            <div className="w-full lg:w-1/2 px-3 mb-8 lg:mb-0">
+            <div className="w-full lg:w-1/2 px-3 mb-8 lg:mb-0 flex items-center justify-center">
               <img
-                className="w-full max-w-[612px] h-auto"
+                className="w-full max-w-[212px] sm:max-w-[412px] lg:max-w-[612px] h-auto"
                 src={deliveryImg}
                 alt="delivery-img"
               />

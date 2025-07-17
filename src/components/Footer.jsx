@@ -18,11 +18,11 @@ const Footer = () => {
               DescClass="text-[#575757] pt-3 !text-base !leading-[160%]"
               descText="At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference."
             />
-            <div className="flex items-center gap-5 mt-4 sm:mt-6">
+            <div className="flex items-center gap-2 sm:gap-5 mt-4 sm:mt-6">
               {SOCIAL_ICON.map((item, index) => (
                 <a
                   key={index}
-                  className="size-[52px] bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] rounded-full flex justify-center items-center"
+                  className="sm:size-[52px] size-[40px] bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] rounded-full flex justify-center items-center hover:rotate-360 duration-300 transition-all hover:scale-120"
                   href={item.socialLink}
                   target="_blank"
                   rel="noopener noreferrer"
