@@ -16,7 +16,7 @@ const OurMenu = () => {
       id="menu"
       className="py-[50px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-white relative"
     >
-      <div className="max-w-[1140px] mx-auto px-4">
+      <div className="max-w-[1140px] mx-auto px-4 xl:px-0">
         <div className="flex justify-center items-center gap-1.5">
           <Line />
           <h4 className="text-lg font-bold leading-[22px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] bg-clip-text text-transparent">
